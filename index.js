@@ -26,8 +26,8 @@ app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
 
-app.get('/*', (req, res) => {
-  res.sendFile(indexHtml, { root: __dirname });
+app.get('/', (req, res) => {
+  res.send('Server running');
 });
 
 // setup mongodb 
