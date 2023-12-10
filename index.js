@@ -1,7 +1,7 @@
 
 const CLIENT_DIR = path.join( 'client') || process.env.CLIENT_DIR
 // const indexHtml = path.join(CLIENT_DIR+'/index.html')
-const indexHtml ='./client/index.html'
+const indexHtml = './client/index.html';
 
 
 
@@ -26,9 +26,9 @@ app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
 
-app.get('/*',(req,res)=>{
-    res.sendFile(indexHtml)
-  })
+app.get('/*', (req, res) => {
+  res.sendFile(indexHtml, { root: __dirname });
+});
 
 // setup mongodb 
 const connectionURL = "mongodb+srv://Sayam:sayamAlvi@cluster0.chzyy2x.mongodb.net/?retryWrites=true&w=majority";
