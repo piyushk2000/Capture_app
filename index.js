@@ -1,6 +1,7 @@
 
 const CLIENT_DIR = path.join( 'client') || process.env.CLIENT_DIR
-const indexHtml = path.join(CLIENT_DIR+'/index.html')
+// const indexHtml = path.join(CLIENT_DIR+'/index.html')
+const indexHtml ='./client/index.html'
 
 
 
