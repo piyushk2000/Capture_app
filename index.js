@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 // setup mongodb 
-const connectionURL = "mongodb+srv://Sayam:sayamAlvi@cluster0.chzyy2x.mongodb.net/?retryWrites=true&w=majority";
+const connectionURL = "mongodb+srv://pk:piyupiyu@cluster0.ytbqv46.mongodb.net/?retryWrites=true&w=majorityy";
 const PORT = process.env.PORT || 5000;
 
 // returns a promise 
